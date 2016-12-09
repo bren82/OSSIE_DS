@@ -1,0 +1,52 @@
+
+    #!/bin/bash
+
+    #clear console. only the  this line "--- is kept in the file. others, are errased each time.
+    clear
+	echo "---Brendan and Abdullah---" > /home/abdul/MQTT/output.txt
+
+    #General Message.
+    echo "Information on Linux_Server's Health:" >> /home/abdul/MQTT/output.txt
+
+    echo "Conneted User: $USER" >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #Current Date and Week number.
+    echo "date:`date`, week: `date +"%V"`." >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #Logged Users.
+    echo "Connected Users:" >> /home/abdul/MQTT/output.txt
+
+    w | cut -d " " -f 1 - | grep -v USER | sort -u >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #More System Info:
+    echo "OS: `uname -s`, Processor: `uname -m` processor." >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #Uptime info:
+    echo "Uptime:" >> /home/abdul/MQTT/output.txt
+
+    uptime >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #Free memory information
+    echo "Memory Usage:" >> /home/abdul/MQTT/output.txt
+
+    free >> /home/abdul/MQTT/output.txt
+
+    echo
+
+    #Information about disk usage.
+    echo "Disk Usage:" >> /home/abdul/MQTT/output.txt
+
+    df -kh >> /home/abdul/MQTT/output.txt
+
+    echo
+	java -cp org.eclipse.paho.client.mqttv3-1.1.0.jar:. My_MQTTClient

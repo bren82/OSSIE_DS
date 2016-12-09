@@ -1,0 +1,4 @@
+#!/bin/bash
+# this Script will call mt MQTTClient.java File
+/home/superstaruser/Assignment2/myScript
+

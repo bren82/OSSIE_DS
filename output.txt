@@ -1,0 +1,22 @@
+---Brendan and Abdullah---
+Information on Linux_Server's Health:
+Conneted User: 
+date:Tue Dec  6 16:48:50 GMT 2016, week: 49.
+Connected Users:
+
+OS: Linux, Processor: x86_64 processor.
+Uptime:
+ 16:48:51 up 0 min,  0 users,  load average: 1.29, 0.28, 0.09
+Memory Usage:
+             total       used       free     shared    buffers     cached
+Mem:       1024272     141824     882448       4772      15124      70700
+-/+ buffers/cache:      56000     968272
+Swap:      1136636          0    1136636
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        24G  3.2G   20G  14% /
+udev             10M     0   10M   0% /dev
+tmpfs           201M  4.7M  196M   3% /run
+tmpfs           501M     0  501M   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           501M     0  501M   0% /sys/fs/cgroup
